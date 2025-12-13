@@ -55,7 +55,7 @@ function Uninstall-Office365 {
         Write-Host Removing Office 365 junkware -ForegroundColor Cyan -NoNewline
 
         try{
-            Invoke-WebRequest -Uri https://download.microsoft.com/download/2/7/A/27AF1BE6-DD20-4CB4-B154-EBAB8A7D4A7E/officedeploymenttool_13929-20296.exe -UseBasicParsing -OutFile odt.exe
+            Invoke-WebRequest -Uri https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_19328-20210.exe -UseBasicParsing -OutFile odt.exe
         
             .\odt.exe /extract:$($odtdir.fullname) /quiet
 
